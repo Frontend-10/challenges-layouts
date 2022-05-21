@@ -1,6 +1,159 @@
 body {
+    background-color: var(--body-bg-color);
+
     display: grid;
     padding: 4rem;
-    grid-template-columns: 1fr auto;
+    grid-template: "header content" auto
+                   "footer footer" 40px / 348px auto;
     gap: 6rem;
+}
+
+header {
+    grid-area: header;
+}
+
+.personal-info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.card {
+    background-color: var(--bg-cards);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 2rem;
+    padding: 3rem 2rem;
+}
+
+.card__title {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.personal-info__principal {
+    text-align: center;
+}
+
+.personal-info__principal img {
+    width: 12.8rem;
+    height: 12.8rem;
+    border-radius: 100%;
+    margin: 3.2rem auto 3rem;
+}
+
+.personal-info__principal h1 {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 29px;
+    margin-bottom: 1rem;
+}
+
+.personal-info__principal p {
+    display: inline-block;
+    font-weight: 300;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    margin-bottom: 4.9rem;
+}
+
+.personal-info__contact {
+    padding: 3rem 4rem;
+}
+
+.personal-info__contact ul {
+    margin-left: 4.4rem;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.personal-info__contact li {
+    line-height : 2.4rem;
+}
+
+.personal-info__contact li::before {
+    content: "";
+    width: 2.4rem;
+    height: 2.4rem;
+    position: absolute;
+    left: 4rem;
+}
+
+.personal-info__contact li:nth-child(1)::before {
+    background: url("../img/map-pin.svg") no-repeat center;
+}
+
+.personal-info__contact li:nth-child(2)::before {
+    background: url("../img/briefcase.svg") no-repeat center;
+}
+
+.personal-info__contact li:nth-child(3)::before {
+    background: url("../img/github.svg") no-repeat center;
+}
+
+.personal-info__contact li:nth-child(4)::before {
+    background: url("../img/linkedin.svg") no-repeat center;
+}
+
+.personal-info__contact li:nth-child(5)::before {
+    background: url("../img/twitter.svg") no-repeat center;
+}
+
+.personal-info__contact li:nth-child(6)::before {
+    background: url("../img/globe.svg") no-repeat center;
+}
+
+.personal-info__contact li:nth-child(7)::before {
+    background: url("../img/mail.svg") no-repeat center;
+}
+
+.personal-info__stacks ul {
+    margin: 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.personal-info__stacks li {
+    color: #000;
+    width: 8.6rem;
+    height: 2.4rem;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 2.4rem;
+    text-align: center;
+    background-color: var(--bg-techs);
+    border-radius: 2rem;
+    text-transform: uppercase;
+}
+
+.personal-info__experiences ul ul {
+    margin: 0 2rem 2rem;
+}
+
+.personal-info__experiences li {
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+.personal-info__experiences ul li:first-child {
+    list-style: disc;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+
+main {
+    grid-area: content;
+}
+
+footer {
+    grid-area: footer;
 }

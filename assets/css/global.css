@@ -5,6 +5,6 @@
     --bg-techs: #CB92B1;
 
     font-family: 'Merriweather Sans', sans-serif;
-
+    color: var(--text-color);
     font-size: 62.5%;
 }
