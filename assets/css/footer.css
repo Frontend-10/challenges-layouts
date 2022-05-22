@@ -1,0 +1,10 @@
+.footer {
+    grid-area: footer;
+}
+
+.footer__text {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 4rem;
+    text-align: center;
+}

@@ -1,0 +1,145 @@
+.content {
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projects__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.projects__card {
+    box-sizing: border-box;
+    width: calc(50% - 1.5rem);
+}
+
+.projects__title {
+    position: relative;
+    margin-left: 3.6rem;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+.projects__title::before {
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    left: -3.6rem;
+    background: url("../img/folder.svg") no-repeat center;
+}
+
+.projects__text {
+    margin: 2.2rem 0;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+.projects__info {
+    display: grid;
+    grid-template-columns: 7.2rem 7.2rem auto;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+.projects__stars {
+    position: relative;
+    margin-left: 2.8rem;
+}
+
+.projects__stars::before {
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    left: -2.8rem;
+    background: url("../img/star.svg") no-repeat center;
+}
+
+.projects__forks {
+    position: relative;
+    margin-left: 2.8rem;
+}
+
+.projects__forks::before {
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    left: -2.8rem;
+    background: url("../img/git-branch.svg") no-repeat center;
+}
+
+.projects__language {
+    position: relative;
+    justify-self: self-end;
+    line-height: 1.5rem;
+}
+
+.projects__language::before {
+    content: "";
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #E7DE79;
+    border-radius: 100%;
+    position: absolute;
+    left: -2.8rem;
+}
+
+.post__card {
+    display: grid;
+    grid-template-columns: 12.8rem auto;
+    grid-template-rows: 3rem 4.6rem 3rem 2.1rem;
+    column-gap: 2rem;
+}
+
+.post__author-img {
+    grid-row: 1 / span 4;
+    background: url('../img/perfil.jpg') no-repeat center / contain;
+    width: 12.8rem;
+    height: 12.8rem;
+    border-radius: 100%;
+}
+
+.post__title {
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+}
+
+.post__date {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+.post__brief {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+.post__tags {
+    display: flex;
+    gap: 2rem;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+.post__item::before {
+    content: "#";
+}

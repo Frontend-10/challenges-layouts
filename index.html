@@ -10,93 +10,146 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/global.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/content.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
 </head>
 <body>
-    <header class="personal-info">
-        <section class="personal-info__principal card">
-            <img src="./assets/img/perfil.jpg" alt="">
-            <h1>Robson Leal Teixeira</h1>
-            <p>Full Stack Developer</p>
+    <header class="bio">
+        <section class="bio__main card">
+            <img class="bio__img" src="./assets/img/perfil.jpg" alt="Imagem do perfil do usuário">
+            <h1 class="bio__title--principal">Robson Leal Teixeira</h1>
+            <p class="bio__subtitle">Full Stack Developer</p>
         </section>
-        <section class="personal-info__contact card">
-            <ul>
-                <li>Brasil</li>
-                <li>Autônomo</li>
-                <li>robson-leal</li>
-                <li>robson-leal</li>
-                <li>robson-leal</li>
-                <li>https://robson-leal.dev/</li>
-                <li>rrobson9@gmail.com</li>
+
+        <section class="bio__info card card--info">
+            <ul class="bio__list">
+                <li class="bio__item">Brasil</li>
+                <li class="bio__item">Autônomo</li>
+                <li class="bio__item">robson-leal</li>
+                <li class="bio__item">robson-leal</li>
+                <li class="bio__item">robson-leal</li>
+                <li class="bio__item">https://robson-leal.dev/</li>
+                <li class="bio__item">rrobson9@gmail.com</li>
             </ul>
         </section>
-        <section class="personal-info__stacks card">
-            <h2 class="card__title">Tecnologias</h2>
-            <ul>
-                <li>Python</li>
-                <li>Django</li>
-                <li>Git</li>
-                <li>Github</li>
-                <li>CSS</li>
-                <li>HTML</li>
-                <li>Javascript</li>
-                <li>Angular</li>
+
+        <section class="bio__stacks card card--list">
+            <h2 class="card__title bio__title">Tecnologias</h2>
+            <ul class="bio__list--stacks">
+                <li class="bio__item--stacks">Python</li>
+                <li class="bio__item--stacks">Django</li>
+                <li class="bio__item--stacks">Git</li>
+                <li class="bio__item--stacks">Github</li>
+                <li class="bio__item--stacks">CSS</li>
+                <li class="bio__item--stacks">HTML</li>
+                <li class="bio__item--stacks">Javascript</li>
+                <li class="bio__item--stacks">Angular</li>
             </ul>
         </section>
-        <section class="personal-info__experiences card">
-            <h2 class="card__title">Experiências</h2>
+        <section class="bio__experiences card card--list">
+            <h2 class="card__title bio__title">Experiências</h2>
             <ul>
-                <ul>
-                    <li>Rockseat</li>
-                    <li>2019 - Atualmente</li>
-                    <li>Community Experience</li>
+                <ul class="bio__list--generic">
+                    <li class="bio__item--generic">Rockseat</li>
+                    <li class="bio__item--generic">2019 - Atualmente</li>
+                    <li class="bio__item--generic">Community Experience</li>
                 </ul>
-                <ul>
-                    <li>Rockseat</li>
-                    <li>2019 - Atualmente</li>
-                    <li>Community Experience</li>
+                <ul class="bio__list--generic">
+                    <li class="bio__item--generic">Rockseat</li>
+                    <li class="bio__item--generic">2019 - Atualmente</li>
+                    <li class="bio__item--generic">Community Experience</li>
                 </ul>
-                <ul>
-                    <li>Rockseat</li>
-                    <li>2019 - Atualmente</li>
-                    <li>Community Experience</li>
+                <ul class="bio__list--generic">
+                    <li class="bio__item--generic">Rockseat</li>
+                    <li class="bio__item--generic">2019 - Atualmente</li>
+                    <li class="bio__item--generic">Community Experience</li>
                 </ul>
-                <ul>
-                    <li>Rockseat</li>
-                    <li>2019 - Atualmente</li>
-                    <li>Community Experience</li>
+                <ul class="bio__list--generic">
+                    <li class="bio__item--generic">Rockseat</li>
+                    <li class="bio__item--generic">2019 - Atualmente</li>
+                    <li class="bio__item--generic">Community Experience</li>
                 </ul>
             </ul>
         </section>
-        <section class="personal-info__experiences card">
-            <h2>Educação</h2>
-            <li>
-                <li>Rockseat</li>
-                <li>2019 - 2019</li>
-                <li>GoStack</li>
-            </li>
-            <li>
-                <li>Rockseat</li>
-                <li>2019 - 2020</li>
-                <li>Ignite</li>
-            </li>
-            <li>
-                <li>Rockseat</li>
-                <li>2019 - 2021</li>
-                <li>Ignite Pro</li>
-            </li>
-            <li>
-                <li>Rockseat</li>
-                <li>2019 - 2021</li>
-                <li>Ignite Pro</li>
-            </li>
+        <section class="personal-info__education card card--list">
+            <h2 class="card__title bio__title">Educação</h2>
+            <ul>
+                <ul class="bio__list--generic">
+                    <li class="bio__item--generic">Rockseat</li>
+                    <li class="bio__item--generic">2019 - Atualmente</li>
+                    <li class="bio__item--generic">Community Experience</li>
+                </ul>
+                <ul class="bio__list--generic">
+                    <li class="bio__item--generic">Rockseat</li>
+                    <li class="bio__item--generic">2019 - Atualmente</li>
+                    <li class="bio__item--generic">Community Experience</li>
+                </ul>
+                <ul class="bio__list--generic">
+                    <li class="bio__item--generic">Rockseat</li>
+                    <li class="bio__item--generic">2019 - Atualmente</li>
+                    <li class="bio__item--generic">Community Experience</li>
+                </ul>
+                <ul class="bio__list--generic">
+                    <li class="bio__item--generic">Rockseat</li>
+                    <li class="bio__item--generic">2019 - Atualmente</li>
+                    <li class="bio__item--generic">Community Experience</li>
+                </ul>
+            </ul>
         </section>
     </header>
-    <main>
-        <p>content</p>
+
+    <main class="content">
+        <section class="projects card">
+            <h2 class="card__title">My Projects</h2>
+            <a class="card__link" href="#">Veja todos</a>
+        </section>
+
+        <section class="projects__list">
+            <article class="projects__card card">
+                <h3 class="projects__title">my-onix</h3>
+                <p class="projects__text">Consulte os códigos de erro que aparecem no painel do veículo Onix.
+                </p>
+                <div class="projects__info">
+                    <p class="projects__stars">100</p>
+                    <p class="projects__forks">100</p>
+                    <p class="projects__language">Javascript</p>
+                </div>
+            </article>
+            <article class="projects__card card">
+                <h3 class="projects__title">my-onix</h3>
+                <p class="projects__text">Consulte os códigos de erro que aparecem no painel do veículo Onix.
+                </p>
+                <div class="projects__info">
+                    <p class="projects__stars">100</p>
+                    <p class="projects__forks">100</p>
+                    <p class="projects__language">Javascript</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="posts card">
+            <h2 class="card__title">Recents Posts</h2>
+        </section>
+
+        <section class="post_lists">
+            <article class="post__card card">
+                <div class="post__author-img"></div>
+                <h3 class="post__title">Erro adb devices no Genymotion e Android Studio (React Native)</h3>
+                <p class="post__date">2 anos atrás</p>
+                <p class="post__brief">Erro adb devices no Genymotion e Android Studio (React Native)</p>
+                <ul class="post__tags">
+                    <li class="post__item">react-native</li>
+                    <li class="post__item">genimotion</li>
+                    <li class="post__item">genimotion</li>
+                    <li class="post__item">genimotion</li>
+                </ul>
+            </article>
+        </section>
     </main>
-    <footer>
-        <p>footer</p>
+
+    <footer class="footer">
+        <p class="footer__text">Feito com 💜 por Robson Leal</p>
     </footer>
 </body>
 </html>

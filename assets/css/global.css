@@ -8,3 +8,13 @@
     color: var(--text-color);
     font-size: 62.5%;
 }
+
+body {
+    background-color: var(--body-bg-color);
+
+    display: grid;
+    padding: 4rem;
+    grid-template: "header content" auto
+                   "footer footer" 4rem / 34.8rem auto;
+    column-gap: 6rem;
+}
